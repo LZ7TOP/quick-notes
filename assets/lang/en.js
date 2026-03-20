@@ -32,4 +32,7 @@ window.I18N_EN = {
   lang_ja: "日本語",
   lang_ko: "한국어",
   copy_success: "Copy success!",
+  btn_clear: "Clear All",
+  confirm_clear_msg: "Are you sure you want to clear all notes? This cannot be undone.",
+  btn_confirm_clear: "Clear"
 };
