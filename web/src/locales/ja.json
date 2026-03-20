@@ -22,5 +22,15 @@
   "history_title": "[ 履歴バージョン ]",
   "download_title": "[ ダウンロードセンター ]",
   "btn_download_now": "ZIPダウンロード",
-  "ver_latest": "最新バージョン"
+  "ver_latest": "最新バージョン",
+  "btn_back": "[ ホームに戻る ]",
+  "tutorial_title": "[ 使用チュートリアル ]",
+  "tutorial_step_1_title": "1. 拡張機能をインストール",
+  "tutorial_step_1_desc": "ダウンロードした ZIP を解凍し、Chrome の拡張機能ページで「デベロッパー モード」を有効にして、「展開済みを読み込む」を選択します。",
+  "tutorial_step_2_title": "2. ツールバーに固定",
+  "tutorial_step_2_desc": "ツールバーのパズル アイコンをクリックし、BitMemo を固定して、いつでもメイン パネルを開けるようにします。",
+  "tutorial_step_3_title": "3. ウェブでのクイック キャプチャ",
+  "tutorial_step_3_desc": "ウェブページでテキストやリンクを選択し、右クリックして「BitMemo に追加」を選択するだけで素早く取得できます。",
+  "tutorial_step_4_title": "4. クラウド同期と設定",
+  "tutorial_step_4_desc": "メイン パネルの設定アイコンをクリックして、5 か国語の切り替えや、複数デバイス間でのリアルタイム同期が可能です。"
 }

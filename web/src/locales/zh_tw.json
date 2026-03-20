@@ -22,5 +22,15 @@
   "history_title": "[ 歷史版本 ]",
   "download_title": "[ 下載中心 ]",
   "btn_download_now": "立即下載 ZIP",
-  "ver_latest": "最新版本"
+  "ver_latest": "最新版本",
+  "btn_back": "[ 返回首頁 ]",
+  "tutorial_title": "[ 使用教學 ]",
+  "tutorial_step_1_title": "1. 安裝擴充功能",
+  "tutorial_step_1_desc": "將下載的 ZIP 包解壓縮，並在 Chrome 擴充功能中開啟「開發者模式」，選擇「載入開發中擴充功能」。",
+  "tutorial_step_2_title": "2. 固定到工具欄",
+  "tutorial_step_2_desc": "在工具欄點擊拼圖圖示，將 BitMemo 固定，以便隨時點擊彈出主面板。",
+  "tutorial_step_3_title": "3. 網頁便捷採集",
+  "tutorial_step_3_desc": "在網頁中選取文字或連結，右擊選擇「添加到 BitMemo」即可快速採集。",
+  "tutorial_step_4_title": "4. 雲端同步與設置",
+  "tutorial_step_4_desc": "在插件主面板點擊設置圖示，可切換 5 國語言，並實現多設備數據實時同步。"
 }

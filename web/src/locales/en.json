@@ -22,5 +22,15 @@
   "history_title": "[ UPDATE_HISTORY ]",
   "download_title": "[ DOWNLOAD_CENTER ]",
   "btn_download_now": "DOWNLOAD ZIP NOW",
-  "ver_latest": "Latest"
+  "ver_latest": "Latest",
+  "btn_back": "[ BACK TO HOME ]",
+  "tutorial_title": "[ USER_GUIDE ]",
+  "tutorial_step_1_title": "1. INSTALLATION",
+  "tutorial_step_1_desc": "Unzip the downloaded package, enable 'Developer mode' in Chrome extensions, and click 'Load unpacked'.",
+  "tutorial_step_2_title": "2. PIN TO TOOLBAR",
+  "tutorial_step_2_desc": "Click the puzzle icon in your toolbar and pin BitMemo for quick access to the main panel.",
+  "tutorial_step_3_title": "3. QUICK CAPTURE",
+  "tutorial_step_3_desc": "Select text or a link on any page, right-click and choose 'Add to BitMemo' to save instantly.",
+  "tutorial_step_4_title": "4. MULTI-LANGUAGE SETTINGS",
+  "tutorial_step_4_desc": "Click the gear icon in the main panel to switch between 5 languages."
 }

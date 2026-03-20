@@ -22,5 +22,15 @@
   "history_title": "[ 历史版本 ]",
   "download_title": "[ 下载中心 ]",
   "btn_download_now": "立即下载 ZIP",
-  "ver_latest": "最新版本"
+  "ver_latest": "最新版本",
+  "btn_back": "[ 返回首页 ]",
+  "tutorial_title": "[ 使用教程 ]",
+  "tutorial_step_1_title": "1. 安装插件",
+  "tutorial_step_1_desc": "将下载的 ZIP 包解压，并在 Chrome 扩展程序中开启‘开发者模式’，选择‘加载已解压的扩展程序’。",
+  "tutorial_step_2_title": "2. 固定到工具栏",
+  "tutorial_step_2_desc": "在工具栏点击拼图图标，将 BitMemo 固定，以便随时点击弹出主面板。",
+  "tutorial_step_3_title": "3. 网页快捷采集",
+  "tutorial_step_3_desc": "在网页中选中文字或链接，右键选择‘添加到 BitMemo’即可快速采集。",
+  "tutorial_step_4_title": "4. 多语言设置",
+  "tutorial_step_4_desc": "在插件主面板点击设置图标，可切换 5 种语言。"
 }

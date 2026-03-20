@@ -9,11 +9,11 @@
 :root {
   --primary: #4a74de; /* Mint Green */
   --secondary: #f0f472; /* Soft Pink */
-  --bg: #000000; /* Deep Obsidian */
-  --glass: rgba(255, 255, 255, 0.5);
+  --bg: #595959; /* Deep Obsidian */
+  --glass: rgba(255, 255, 255, 0.2);
   --border: #0000ff;
-  --text: #0080ff;
-  --text-dim: #94a3b8;
+  --text: #0022ff;
+  --text-dim: #ffffff;
   --pixel-border: 4px;
   --accent: #fbbf24; /* Gold */
 }
