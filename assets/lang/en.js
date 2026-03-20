@@ -30,5 +30,6 @@ window.I18N_EN = {
   lang_zh_tw: "繁体中文",
   lang_en: "English",
   lang_ja: "日本語",
-  lang_ko: "한국어"
+  lang_ko: "한국어",
+  copy_success: "Copy success!",
 };

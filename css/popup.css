@@ -157,6 +157,43 @@ h1 {
   cursor: pointer;
 }
 
+.icon-btn.danger {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s;
+  image-rendering: pixelated;
+}
+
+.icon-btn.danger:hover {
+  transform: scale(1.1);
+}
+
+.icon-btn.danger:active {
+  transform: scale(0.9);
+}
+
+.primary-btn.danger {
+  background: #ff4d4d;
+  color: white;
+}
+
+.primary-btn.danger:hover {
+  background: #ff1a1a;
+  box-shadow: 4px 4px 0px #800000;
+}
+
+.confirm-box {
+  max-width: 280px;
+  text-align: center;
+  border-color: var(--primary);
+}
+
 .pixel-toggle {
   width: 32px;
   height: 18px;

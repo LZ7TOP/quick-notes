@@ -21,6 +21,10 @@ const noteType = document.getElementById('noteType');
 const noteTitle = document.getElementById('noteTitle');
 const noteContent = document.getElementById('noteContent');
 const showWidgetToggle = document.getElementById('showWidgetToggle');
+const clearAllBtn = document.getElementById('clearAllBtn');
+const confirmModal = document.getElementById('confirmModal');
+const confirmClearBtn = document.getElementById('confirmClearBtn');
+const cancelClearBtn = document.getElementById('cancelClearBtn');
 
 // Custom Select Elements
 const customTypeSelect = document.getElementById('customTypeSelect');
@@ -161,6 +165,22 @@ function showToast(message) {
   document.body.appendChild(toast);
   setTimeout(() => toast.remove(), 1600);
 }
+
+// Clear All Logic
+clearAllBtn.onclick = () => {
+  confirmModal.classList.add('active');
+};
+
+cancelClearBtn.onclick = () => {
+  confirmModal.classList.remove('active');
+};
+
+confirmClearBtn.onclick = async () => {
+  notes = [];
+  await chrome.storage.local.set({ [STORAGE_KEY]: [] });
+  confirmModal.classList.remove('active');
+  renderNotes();
+};
 
 function copyNote(id) {
   const note = notes.find(n => n.id === id);

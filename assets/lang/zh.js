@@ -31,5 +31,8 @@ window.I18N_ZH = {
   lang_en: "English",
   lang_ja: "日本語",
   lang_ko: "한국어",
-  copy_success: "复制成功！"
+  copy_success: "複製成功！",
+  btn_clear: "清空全部",
+  confirm_clear_msg: "確定要清空所有便簽嗎？此操作不可撤銷。",
+  btn_confirm_clear: "確定清空"
 };

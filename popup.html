@@ -34,6 +34,7 @@
           </div>
         </div>
         <div class="settings-toggle">
+          <button id="clearAllBtn" class="icon-btn danger" title="Clear All" data-i18n="btn_clear">🗑️</button>
           <label>
             <input type="checkbox" id="showWidgetToggle" checked>
             <span class="pixel-toggle"></span>
@@ -91,6 +92,17 @@
         <div class="modal-actions">
           <button id="cancelBtn" class="secondary-btn" data-i18n="btn_cancel">取消</button>
           <button id="saveBtn" class="primary-btn" data-i18n="btn_save">保存</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div id="confirmModal" class="modal">
+      <div class="modal-content confirm-box">
+        <p data-i18n="confirm_clear_msg">确定要清空所有便签吗？此操作不可撤销。</p>
+        <div class="modal-actions">
+          <button id="cancelClearBtn" class="secondary-btn" data-i18n="btn_cancel">取消</button>
+          <button id="confirmClearBtn" class="primary-btn danger" data-i18n="btn_confirm_clear">确定清空</button>
         </div>
       </div>
     </div>

@@ -30,5 +30,6 @@ window.I18N_ZH_TW = {
   lang_zh_tw: "繁體中文",
   lang_en: "English",
   lang_ja: "日本語",
-  lang_ko: "한국어"
+  lang_ko: "한국어",
+  copy_success: "複製成功！"
 };
