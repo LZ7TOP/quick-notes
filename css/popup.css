@@ -555,6 +555,31 @@ footer {
   resize: none;
 }
 
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--card-bg);
+  border: 3px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 6px 6px 0px #000;
+  pointer-events: none;
+  animation: toast-fade 1.5s ease-out forwards;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@keyframes toast-fade {
+  0% { opacity: 0; transform: translate(-50%, -40%); }
+  15% { opacity: 1; transform: translate(-50%, -50%); }
+  85% { opacity: 1; transform: translate(-50%, -50%); }
+  100% { opacity: 0; transform: translate(-50%, -60%); }
+}
+
 .modal-actions {
   display: flex;
   gap: 12px;

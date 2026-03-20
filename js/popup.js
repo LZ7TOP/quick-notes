@@ -145,11 +145,27 @@ function formatCode(code) {
   }
 }
 
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    showToast(window.i18n.t('copy_success'));
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 1600);
+}
+
 function copyNote(id) {
   const note = notes.find(n => n.id === id);
   if (note) {
-    navigator.clipboard.writeText(note.content);
-    // Visual feedback could be added here
+    copyToClipboard(note.content);
   }
 }
 
