@@ -1,3 +1,4 @@
+/* global __APP_VERSION__, __APP_CHANGELOG__ */
 import React, { useState } from "react";
 import {
   Download,
