@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Quick Notes",
-  "version": "1.6.2",
+  "name": "BitMemo (像素记)",
+  "version": "1.7.0",
   "description": "快捷便签 - 浮动窗口，随处记录，一键链接",
   "permissions": ["storage", "tabs"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
     }
   },
   "background": {
@@ -29,8 +29,8 @@
     }
   ],
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
   }
 }
