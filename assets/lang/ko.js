@@ -32,6 +32,7 @@ window.I18N_KO = {
   lang_ja: "日本語",
   lang_ko: "한국어",
   copy_success: "복사 성공!",
+  btn_clear: "모두 삭제",
   context_menu_add: "BitMemo에 추가",
   source_manual: "수동",
   source_context_menu: "오른쪽 클릭"

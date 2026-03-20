@@ -32,6 +32,7 @@ window.I18N_ZH_TW = {
   lang_ja: "日本語",
   lang_ko: "한국어",
   copy_success: "複製成功！",
+  btn_clear: "清空全部",
   context_menu_add: "添加到 像素記",
   source_manual: "手動",
   source_context_menu: "右鍵"

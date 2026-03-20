@@ -32,6 +32,7 @@ window.I18N_JA = {
   lang_ja: "日本語",
   lang_ko: "한국어",
   copy_success: "コピー成功！",
+  btn_clear: 'すべてクリア',
   context_menu_add: 'BitMemo に追加',
   source_manual: "手動",
   source_context_menu: "右クリック"

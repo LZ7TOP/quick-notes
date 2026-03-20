@@ -168,6 +168,7 @@ h1 {
   justify-content: center;
   transition: transform 0.1s;
   image-rendering: pixelated;
+  color: #ff4d4d;
 }
 
 .icon-btn.danger:hover {

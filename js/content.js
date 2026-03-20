@@ -186,3 +186,4 @@ function showFeedback(message) {
     style.remove();
   }, 1600);
 }
+})();
