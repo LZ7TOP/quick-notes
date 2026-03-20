@@ -13,17 +13,35 @@
   icon.src = chrome.runtime.getURL('icons/icon48.png');
   btn.appendChild(icon);
   
+  const closeBtn = document.createElement('div');
+  closeBtn.className = 'qn-close-btn';
+  closeBtn.innerHTML = '×';
+  closeBtn.title = '关闭';
+  
   container.appendChild(iframe);
   container.appendChild(btn);
+  container.appendChild(closeBtn);
   document.body.appendChild(container);
 
   // Toggle panel
-  btn.onclick = () => {
+  btn.addEventListener('click', (e) => {
+    if (hasDragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
     container.classList.toggle('active');
-  };
+  });
+
+  // Close button logic
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    container.classList.remove('active');
+  });
 
   // Dragging logic
   let isDragging = false;
+  let hasDragged = false;
   let currentX;
   let currentY;
   let initialX;
@@ -36,6 +54,7 @@
   document.addEventListener('mouseup', dragEnd);
 
   function dragStart(e) {
+    hasDragged = false;
     initialX = e.clientX - xOffset;
     initialY = e.clientY - yOffset;
     if (e.target === btn || btn.contains(e.target)) {
@@ -46,6 +65,7 @@
   function drag(e) {
     if (isDragging) {
       e.preventDefault();
+      hasDragged = true;
       currentX = e.clientX - initialX;
       currentY = e.clientY - initialY;
       xOffset = currentX;
