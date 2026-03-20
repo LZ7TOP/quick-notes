@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Quick Notes LZ7",
+  "name": "Quick Notes",
   "version": "1.0.0",
   "description": "快捷便签 - 记录你的灵感、代码与链接",
   "permissions": ["storage"],
