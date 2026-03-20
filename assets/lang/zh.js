@@ -31,11 +31,11 @@ window.I18N_ZH = {
   lang_en: "English",
   lang_ja: "日本語",
   lang_ko: "한국어",
-  copy_success: "複製成功！",
+  copy_success: "复制成功！",
   btn_clear: "清空全部",
-  confirm_clear_msg: "確定要清空所有便簽嗎？此操作不可撤銷。",
-  btn_confirm_clear: "確定清空",
-  context_menu_add: "添加到 像素記",
-  source_manual: "手動",
-  source_context_menu: "右鍵"
+  confirm_clear_msg: "确定要清空所有便签吗？此操作不可撤销。",
+  btn_confirm_clear: "确定清空",
+  context_menu_add: "添加到 像素记",
+  source_manual: "手动",
+  source_context_menu: "右键"
 };

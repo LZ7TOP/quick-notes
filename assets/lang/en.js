@@ -35,5 +35,7 @@ window.I18N_EN = {
   btn_clear: "Clear All",
   confirm_clear_msg: "Are you sure you want to clear all notes? This cannot be undone.",
   btn_confirm_clear: "Clear",
-  context_menu_add: "Add to BitMemo"
+  context_menu_add: "Add to BitMemo",
+  source_manual: "Manual",
+  source_context_menu: "Menu"
 };
