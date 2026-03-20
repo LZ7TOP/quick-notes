@@ -23,15 +23,44 @@
   container.appendChild(closeBtn);
   document.body.appendChild(container);
 
-  // Toggle panel
-  btn.addEventListener('click', (e) => {
+  // Toggle panel (Double Click only)
+  btn.addEventListener('dblclick', (e) => {
     if (hasDragged) {
       e.preventDefault();
       e.stopPropagation();
       return;
     }
+    
+    // Calculate smart positioning before showing
+    if (!container.classList.contains('active')) {
+      updatePanelPosition();
+    }
+    
     container.classList.toggle('active');
   });
+
+  function updatePanelPosition() {
+    const btnRect = btn.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Reset classes
+    iframe.classList.remove('pos-top', 'pos-bottom', 'pos-left', 'pos-right');
+
+    // Vertical position
+    if (btnRect.top > viewportHeight / 2) {
+      iframe.classList.add('pos-top');
+    } else {
+      iframe.classList.add('pos-bottom');
+    }
+
+    // Horizontal position
+    if (btnRect.left > viewportWidth / 2) {
+      iframe.classList.add('pos-left');
+    } else {
+      iframe.classList.add('pos-right');
+    }
+  }
 
   // Close button logic
   closeBtn.addEventListener('click', (e) => {
