@@ -4,6 +4,7 @@ const STORAGE_KEY = 'quick_notes_lz7';
 // State
 let notes = [];
 let currentTab = 'all';
+let editingId = null;
 
 // DOM Elements
 const notesList = document.getElementById('notesList');
@@ -13,6 +14,7 @@ const addBtn = document.getElementById('addBtn');
 const noteModal = document.getElementById('noteModal');
 const cancelBtn = document.getElementById('cancelBtn');
 const saveBtn = document.getElementById('saveBtn');
+const modalTitle = document.getElementById('modalTitle');
 
 const noteType = document.getElementById('noteType');
 const noteTitle = document.getElementById('noteTitle');
@@ -58,6 +60,7 @@ function createNoteCard(note) {
       <div class="card-actions">
         ${note.type === 'link' ? `<button class="action-btn open-link" data-url="${escapeHtml(note.content)}">打开</button>` : ''}
         ${note.type === 'code' ? `<button class="action-btn format" data-id="${note.id}">格式化</button>` : ''}
+        <button class="action-btn edit" data-id="${note.id}">编辑</button>
         <button class="action-btn copy" data-id="${note.id}">复制</button>
         <button class="action-btn delete" data-id="${note.id}">删除</button>
       </div>
@@ -81,7 +84,16 @@ async function saveNote() {
     newNote.content = formatCode(newNote.content);
   }
 
-  notes.unshift(newNote);
+  if (editingId) {
+    const index = notes.findIndex(n => n.id === editingId);
+    if (index !== -1) {
+      notes[index] = { ...notes[index], ...newNote, id: editingId };
+    }
+    editingId = null;
+  } else {
+    notes.unshift(newNote);
+  }
+
   await chrome.storage.local.set({ [STORAGE_KEY]: notes });
   
   closeModal();
@@ -147,6 +159,13 @@ function attachCardEvents() {
     };
   });
 
+  document.querySelectorAll('.action-btn.edit').forEach(btn => {
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      editNote(btn.dataset.id);
+    };
+  });
+
   document.querySelectorAll('.action-btn.open-link').forEach(btn => {
     btn.onclick = (e) => {
       e.stopPropagation();
@@ -176,6 +195,20 @@ function closeModal() {
   noteModal.classList.remove('active');
   noteTitle.value = '';
   noteContent.value = '';
+  editingId = null;
+  modalTitle.textContent = '新建便签';
+}
+
+function editNote(id) {
+  const note = notes.find(n => n.id === id);
+  if (!note) return;
+
+  editingId = id;
+  modalTitle.textContent = '编辑便签';
+  noteType.value = note.type;
+  noteTitle.value = note.title;
+  noteContent.value = note.content;
+  noteModal.classList.add('active');
 }
 
 saveBtn.onclick = saveNote;
